@@ -6,5 +6,5 @@ RUN wget https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chr
 RUN unzip chromedriver.zip
 RUN chmod +x chromedriver
 RUN mv chromedriver /usr/local/bin
-RUN wget https://mirror.cs.uchicago.edu/google-chrome/pool/main/g/google-chrome-stable/google-chrome-stable_114.0.5735.90-1_amd64.deb -O chrome.deb
+RUN wget https://mirror.cs.uchicago.edu/google-chrome/pool/main/g/google-chrome-stable/google-chrome-stable_${CHROMEDRIVER_VERSION}-1_amd64.deb -O chrome.deb
 RUN apt-get install -y ./chrome.deb
