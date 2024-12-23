@@ -1,0 +1,7 @@
+---
+services:
+  rails-chrome-webdriver:
+    build: .
+    entrypoint:
+      - '/bin/bash'
+    platform: linux/amd64

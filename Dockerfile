@@ -5,7 +5,7 @@ WORKDIR /rails-chrome-webdriver
 COPY ./Gemfile /rails-chrome-webdriver/Gemfile
 COPY ./Gemfile.lock /rails-chrome-webdriver/Gemfile.lock
 RUN apt-get update -q && apt-get install -y build-essential libsqlite3-dev && \
-    bundle install && \
+    gem update --system && bundle install && \
     wget https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip -O chromedriver.zip && \
     unzip chromedriver.zip && \
     chmod +x chromedriver && \
