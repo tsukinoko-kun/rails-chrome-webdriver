@@ -1,3 +1,4 @@
+---
 name: Build image and publish
 
 on:
@@ -27,4 +28,4 @@ jobs:
         with:
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository }}:latest,ghcr.io/${{ github.repository }}:114
+          tags: ghcr.io/${{ github.repository }}:latest,ghcr.io/${{ github.repository }}:7
