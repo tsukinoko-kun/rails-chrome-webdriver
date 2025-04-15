@@ -2,5 +2,4 @@
 
 This image contains:
 - Ruby + cached Rails 7 dependencies (from the default Gemfile)
-- Chrome 114
-- ChromeDriver 114 (Latest supported Webdriver for Selenium)
+- Chrome + ChromeDriver 114 (version string is in environment variable `CHROMEDRIVER_VERSION`)
